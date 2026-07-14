@@ -6,7 +6,7 @@ console.log(import.meta.env);
 const instance = axios.create({
   baseURL: import.meta.env.VITE_TMDB_API_URL,
   headers: {
-    Authorization: import.meta.env.VITE_TMDB_TOKEN,
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
   },
 });
 

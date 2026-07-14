@@ -34,8 +34,8 @@ export default function MovieModal({ movie, onClose }: MovieModalProps) {
     if (e.currentTarget === e.target) onClose();
   };
 
-  const backdropUrl = movie.poster_path
-  ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+  const backdropUrl = movie.backdrop_path
+  ? `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`
   : "https://placeholder.com";
 
   return createPortal(
